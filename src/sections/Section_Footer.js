@@ -1,4 +1,4 @@
-import {Container, createTheme, responsiveFontSizes, Stack, ThemeProvider, Typography} from "@mui/material";
+import {createTheme, responsiveFontSizes, Stack, ThemeProvider, Typography} from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import {useContext} from "react";
 import {ThemeContext} from "../contexts/theme_context";
