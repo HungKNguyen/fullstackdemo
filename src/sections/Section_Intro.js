@@ -10,10 +10,10 @@ export function Section_Intro() {
     return (
         <Stack>
             <Grid container>
-                <Grid item md={4} sm={6} paddingRight={2}>
+                <Grid item md={4} sm={6} paddingRight={{xs: 0, md:1, sm:2}} paddingBottom={{xs: 1, md:0}}>
                     <img src={PNG} width="100%" />
                 </Grid>
-                <Grid item md={8} sm={6}  paddingLeft={2}>
+                <Grid item md={8} sm={6}  paddingLeft={{xs: 0, md:1, sm:2}}>
                     <RoundedBoxedText borderColor={theme.background_highlight}
                                       backgroundColor={theme.background_highlight}
                                       elevation={2}

@@ -120,11 +120,11 @@ export function Section_ScatterPlot(props) {
                 Scatter Plot
             </Typography>
             <Grid container>
-                <Grid item md={6} sm={8} xs={12} paddingRight={2}>
+                <Grid item md={6} sm={8} xs={12} paddingRight={{xs: 0, md:1, sm:2}} paddingBottom={{xs: 1, md:0}}>
                     {loading ? <Skeleton variant="rectangular" height="100%" width="100%"/>
                         : <ScatterPlot raw_data={data} options={options}/>}
                 </Grid>
-                <Grid item md={6} sm={4} xs={12} paddingLeft={2}>
+                <Grid item md={6} sm={4} xs={12} paddingLeft={{xs: 0, md:1, sm:2}}>
                     <RoundedBoxedText borderColor={theme.secondary} elevation={2}>
                         <Typography variant="body1" style={{color:theme.text_dark}} component="div">
                             <p>
