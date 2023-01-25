@@ -64,18 +64,20 @@ function App() {
   },[])
 
   return (
-    <Stack style={{color: theme.text_dark, background: theme.background}} spacing={6} px={{xs:3, sm:6, md:10, lg: 16}}>
+    <Stack spacing={6} style={{color: theme.text_dark, background: theme.background}}>
       <Section_Title/>
-      <Stack spacing={6}>
-        <Section_Intro/>
-        <Section_ScatterPlot indicators={indicators} countries={countries} scales={scales}
-                             income_groups={income_groups} regions={regions}/>
-        <Section_LinePlot indicators={indicators} countries={countries} scales={scales}
-                          income_groups={income_groups} regions={regions}/>
-        <Section_BarPlot indicators={indicators} countries={countries} scales={scales}
-                                   income_groups={income_groups} regions={regions}/>
-        <Section_Map indicators={indicators} mapData={mapData} palette={colorPalette}/>
-        <Section_Regression models={models} indicators={indicators}/>
+      <Stack spacing={6} px={{xs:3, sm:6, md:10, lg: 16}}>
+        <Stack spacing={6}>
+          <Section_Intro/>
+          <Section_ScatterPlot indicators={indicators} countries={countries} scales={scales}
+                               income_groups={income_groups} regions={regions}/>
+          <Section_LinePlot indicators={indicators} countries={countries} scales={scales}
+                            income_groups={income_groups} regions={regions}/>
+          <Section_BarPlot indicators={indicators} countries={countries} scales={scales}
+                           income_groups={income_groups} regions={regions}/>
+          <Section_Map indicators={indicators} mapData={mapData} palette={colorPalette}/>
+          <Section_Regression models={models} indicators={indicators}/>
+        </Stack>
       </Stack>
       <Section_Footer/>
     </Stack>
