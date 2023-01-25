@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/fullstackdemo/static/css/main.9cfa7aac.css",
-    "main.js": "/fullstackdemo/static/js/main.fb943bca.js",
+    "main.js": "/fullstackdemo/static/js/main.66ff4af7.js",
     "static/js/787.77e30eb5.chunk.js": "/fullstackdemo/static/js/787.77e30eb5.chunk.js",
     "static/media/FullStack.png": "/fullstackdemo/static/media/FullStack.222ad648e7f5afb0cd0a.png",
     "index.html": "/fullstackdemo/index.html",
     "main.9cfa7aac.css.map": "/fullstackdemo/static/css/main.9cfa7aac.css.map",
-    "main.fb943bca.js.map": "/fullstackdemo/static/js/main.fb943bca.js.map",
+    "main.66ff4af7.js.map": "/fullstackdemo/static/js/main.66ff4af7.js.map",
     "787.77e30eb5.chunk.js.map": "/fullstackdemo/static/js/787.77e30eb5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9cfa7aac.css",
-    "static/js/main.fb943bca.js"
+    "static/js/main.66ff4af7.js"
   ]
 }
