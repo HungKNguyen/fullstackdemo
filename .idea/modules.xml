@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/vietnamdevelopment.iml" filepath="$PROJECT_DIR$/.idea/vietnamdevelopment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fullstackdemo/.idea/fullstackdemo.iml" filepath="$PROJECT_DIR$/../fullstackdemo/.idea/fullstackdemo.iml" />
     </modules>
   </component>
 </project>

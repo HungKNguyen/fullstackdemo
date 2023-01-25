@@ -11,6 +11,7 @@ export function Section_Map(props) {
     const theme = useContext(ThemeContext);
     const [indicator, setIndicator] = useState("eys")
     const [colorPalette, setColorPalette] = useState("three");
+    const [tempColorPalette, setTempColorPalette] = useState("three")
 
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState(null);
@@ -31,6 +32,7 @@ export function Section_Map(props) {
             }
             setData(data)
         })
+        setColorPalette(tempColorPalette)
     }
 
     useEffect(() => {
@@ -71,9 +73,9 @@ export function Section_Map(props) {
                     </Grid>
                     <Grid item xs={6}>
                         <SingleSelect label="Color Palette" id="map_color_pal_select"
-                                      onChangeCallback={(value) => {setColorPalette(value)}}
+                                      onChangeCallback={(value) => {setTempColorPalette(value)}}
                                       data={{labels: props.palette.palette, values: props.palette.code}}
-                                      value={colorPalette}/>
+                                      value={tempColorPalette}/>
                     </Grid>
                     <Grid item xs={12} container justifyContent="flex-end">
                         <Button variant="contained" onClick={() => {

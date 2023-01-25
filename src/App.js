@@ -59,6 +59,7 @@ function App() {
 
     API_Map_Data((body) => {
       setMapData(body)
+      console.log(body)
     })
   },[])
 
