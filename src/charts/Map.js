@@ -57,14 +57,14 @@ export function Map({label, geodata, data, palette}) {
     },[data])
 
     useEffect(() => {
-        if (selectedYear !== 0) {
+        if (selectedYear !== 0 && data.hasOwnProperty("value") && geodata.hasOwnProperty("features")) {
             let filtered_data = filter_data(data, selectedYear)
             setChartData(merge_data(filtered_data, geodata, selectedYear))
         }
     },[data, geodata, selectedYear])
 
     useEffect(() => {
-        if (chartData !== {}) {
+        if (chartData.hasOwnProperty("features")) {
             setLoading(false)
         }
     },[chartData])
