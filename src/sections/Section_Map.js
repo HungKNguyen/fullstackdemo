@@ -53,10 +53,8 @@ export function Section_Map(props) {
             <RoundedBoxedText borderColor={theme.secondary} elevation={2}>
                 <Typography variant="body1" style={{color:theme.text_dark}} component="div">
                     <p>
-                        Another example of a graph we usually see online is a world map. In this project, it is created&nbsp;
-                        using the React-Leaflet library. The user can chose which variable they would like to see displayed&nbsp;
-                        as well as the color scale (2-color or 3-color). The additional slider also allows the user to see&nbsp;
-                        the world map overtime.
+                        Another example of a useful graph is a world map. Such a map allow the reader to have a overview&nbsp;
+                        of a variable across the world. The reader also has the option to choose between two color scale.
                     </p>
                 </Typography>
             </RoundedBoxedText>

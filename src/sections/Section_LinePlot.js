@@ -106,20 +106,19 @@ export function Section_LinePlot(props) {
                 Line Plot
             </Typography>
             <Grid container>
-                <Grid item md={6} sm={8} xs={12} paddingRight={{xs: 0, md:1, sm:2}} paddingBottom={{xs: 1, md:0}}>
+                <Grid item md={8} xs={12} paddingRight={{sm: 0, md:1}} paddingBottom={{xs: 1, md:0}}>
                     {loading ? <Skeleton variant="rectangular" height="100%" width="100%"/>
                         : <LinePlot raw_data={data} options={options}/>}
                 </Grid>
-                <Grid item md={6} sm={4} xs={12} paddingLeft={{xs: 0, md:1, sm:2}}>
+                <Grid item md={4} xs={12} paddingLeft={{sm: 0, md:1}}>
                     <RoundedBoxedText borderColor={theme.secondary} elevation={2}>
                         <p>
-                            The graph on the right is a typical line plot. Such a plot allows us to see how a single variable&nbsp;
-                            changes overtime. This plot also allows comparison of different countries/groups overtime.&nbsp;
-                            With the addition of a slider, the user can zoom in on a particular timezone of interest.
+                            The next example is a line plot, which mainly server to show how one variable changes over time.&nbsp;
+                            The reader can chose which variable to show, the scale, as well as countries or groups to include.
                         </p>
                         <p>
-                            The control panel below allow the user to select the y variable, along with the&nbsp;
-                            type of scale. In addition, the user can choose which country/group to include.
+                            Unlike the scatter plot, the year slider here is a range slider to choose the beginning year and&nbsp;
+                            end year.
                         </p>
                     </RoundedBoxedText>
                 </Grid>

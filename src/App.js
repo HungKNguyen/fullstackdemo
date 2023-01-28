@@ -35,11 +35,11 @@ function App() {
     let new_countries = {country:[], iso3:[]}
     API_Regions((body) => {
       setRegions(body);
-      new_countries.country.push(...body.region)
+      new_countries.country.push(...body.region.map((e) => (e + " countries")))
       new_countries.iso3.push(...body.region)
       API_IncomeGroups((body) => {
         setIncomeGroups(body)
-        new_countries.country.push(...body.incomegroup)
+        new_countries.country.push(...body.incomegroup.map((e) => (e + " countries")))
         new_countries.iso3.push(...body.incomegroup)
         API_Countries((body) => {
           new_countries.country.push(...body.country)

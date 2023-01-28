@@ -120,24 +120,25 @@ export function Section_ScatterPlot(props) {
                 Scatter Plot
             </Typography>
             <Grid container>
-                <Grid item md={6} sm={8} xs={12} paddingRight={{xs: 0, md:1, sm:2}} paddingBottom={{xs: 1, md:0}}>
+                <Grid item md={8} xs={12} paddingRight={{sm: 0, md:1}} paddingBottom={{xs: 1, md:0}}>
                     {loading ? <Skeleton variant="rectangular" height="100%" width="100%"/>
                         : <ScatterPlot raw_data={data} options={options}/>}
                 </Grid>
-                <Grid item md={6} sm={4} xs={12} paddingLeft={{xs: 0, md:1, sm:2}}>
+                <Grid item md={4} xs={12} paddingLeft={{sm: 0, md:1}}>
                     <RoundedBoxedText borderColor={theme.secondary} elevation={2}>
                         <Typography variant="body1" style={{color:theme.text_dark}} component="div">
                             <p>
-                                The graph on the right is a typical scatter plot. Such a plot allows us to see how two variables&nbsp;
-                                are correlated. In addition, a slider allow the ability to see how the correlation changes overtime.
+                                Using World Bank data, I simulate a situation where the research team allows readers to&nbsp;
+                                explore the data on the website. The first example would be a scatter plot
                             </p>
                             <p>
-                                The control panel below allow the user to select the x variable and y variable, along with the&nbsp;
-                                type of scale for each axis. In addition, the user can choose which country/group to include.
+                                The reader can use the control panel below to set the X and Y variable, which type of&nbsp;
+                                scale would they like to use, as well as which countries they want to be included on the&nbsp;
+                                scatter plot.
                             </p>
                             <p>
-                                Further improvements would involve changing other characteristics of the points, such as&nbsp;
-                                size and color, based on the underlying data.
+                                In addition, the user can directly interact with the graph my choosing the year using the&nbsp;
+                                slider as well as hover to the more information on any particular country.
                             </p>
                         </Typography>
                     </RoundedBoxedText>

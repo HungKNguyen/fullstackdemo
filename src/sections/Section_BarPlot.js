@@ -109,26 +109,21 @@ export function Section_BarPlot(props) {
                 Bar Plot
             </Typography>
             <Grid container>
-                <Grid item md={6} sm={8} xs={12} paddingRight={{xs: 0, md:1, sm:2}} paddingBottom={{xs: 1, md:0}}>
+                <Grid item md={8} xs={12} paddingRight={{sm: 0, md:1}} paddingBottom={{xs: 1, md:0}}>
                     {loading ? <Skeleton variant="rectangular" height="100%" width="100%"/>
                         : <BarPlot raw_data={data} options={options}/>}
                 </Grid>
-                <Grid item md={6} sm={4} xs={12} paddingLeft={{xs: 0, md:1, sm:2}}>
+                <Grid item md={4} xs={12} paddingLeft={{sm: 0, md:1}}>
                     <RoundedBoxedText borderColor={theme.secondary} elevation={2}>
                         <Typography variant="body1" style={{color:theme.text_dark}} component="div">
                             <p>
-                                The graph on the right is a typical bar plot. This plot allows us to compare and contrast&nbsp;
-                                various indicators among countries/groups. The additional slider also allow the user to see&nbsp;
-                                data changing overtime.
+                                This bar plot allows the user to compare multiple variables at the same time between&nbsp;
+                                many countries/groups. The only limitation is that the values of each variable need to be&nbsp;
+                                on similar scales
                             </p>
                             <p>
-                                The control panel below allow the user to select multiple variables, along with the&nbsp;
-                                type of scale. In addition, the user can choose which country/group to include.
-                            </p>
-                            <p>
-                                One current limitation is that practically we can only choose a variable/group of variables&nbsp;
-                                that have relatively similar range (for example, all 0-1 indexes). Further improvement&nbsp;
-                                could mean utilizing another axis on the right for two different scales.
+                                The reader can choose which variable(s) to include, the scale, as well as which countries&nbsp;
+                                and groups to include.
                             </p>
                         </Typography>
                     </RoundedBoxedText>

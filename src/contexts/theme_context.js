@@ -16,8 +16,8 @@ export const theme = {
     categories_scale: ["#E41A1C", "#377EB8", "#4DAF4A",
         "#984EA3", "#FF7F00", "#FFFF33",
         "#A65628", "#F781BF", "#999999"],
-    two_color_scale: ["#F7FBFF", "#08519C"],
-    three_color_scale: ["#A50F15","#F7FCF5","#006D2C"],
+    two_color_scale: ["#F7FBFF", "#082d9c"],
+    three_color_scale: ["#bd0b12","#F7FCF5","#186d00"],
 };
 
 export const ThemeContext = React.createContext(
